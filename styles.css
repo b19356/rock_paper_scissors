@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Overpass:wght@400;700&family=PT+Sans&display=swap');
+
+body {
+    font-family: 'PT Sans', sans-serif; 
+}
+
+html {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+}
+
+h1, h2, nav, div.not_playing {
+    text-align: center;
+}
+
+button {
+    padding: 1em;
+    color: white;
+    border-radius: 60px;
+    cursor: pointer;
+    background-image: radial-gradient(circle closest-side, black, transparent 100%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #2980b9;
+    background-size: 0 0;
+    transition: 0.25s;
+}
+
+button:hover {
+    background-size: 2000% 2000%;
+}
+
+button.game_over {
+    background-color: #95a5a6;
+}
+
+output, p {
+    display: block;
+    margin: 20px auto 0 auto;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+output > p:nth-child(1), output > p:nth-child(3) {
+    font-weight: bolder;
+}
+
+div {
+    display: none;
+}
+
+div.see_me {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+}
+
+div > button {
+    margin-top: 20px;
+}
+
+div > p {
+    font-size: 25px;
+    color: red;
+}
+
