@@ -1,3 +1,5 @@
+// !Define and Declare constants
+
 const user = document.querySelectorAll("nav > button");
 
 const computer = ["rock", "paper", "scissors"];
@@ -39,6 +41,8 @@ const data = {
 
 }
 
+//! Define and Declare Vars that Will Change
+
 let gameCounter = 0;
 
 let computerWins = 0;
@@ -46,6 +50,8 @@ let computerWins = 0;
 let ties = 0;
 
 let userWins = 0;
+
+//! Define and Declare Functions
 
 function computerPick() {
 
@@ -150,6 +156,8 @@ function startOver() {
     })
 
 }
+
+//! Add Event Listeners
 
 user.forEach(function(el) {
 
